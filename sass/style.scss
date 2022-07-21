@@ -1,0 +1,341 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-position: -70%;
+	background-size: cover;
+	background-color: #2a2a72;
+	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.clear-hot {
+	background-image: url('../img/sunset-2180346_1920.jpg');
+}
+
+.clear {
+	background-image: url('../img/sun-3588618_1920.jpg');
+}
+
+.mist {
+	background-image: url('../img/fog-240075_1920.jpg');
+}
+
+.snow {
+	background-image: url('../img/winter-4682051_1920.jpg');
+}
+
+.rain {
+	background-image: url('../img/rain-316579.jpg');
+}
+
+.clouds {
+	background-image: url('../img/clouds-2329680_1920.jpg');
+}
+
+.drizzle {
+	background-image: url('../img/gods-gift-4590624_1920.jpg');
+}
+
+.thunderstorm {
+	background-image: url('../img/flash-1455285_1920.jpg');
+}
+
+.wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.field {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 8px;
+	color: #fff;
+}
+
+.title {
+	color: #fff;
+	font-size: 20px;
+	margin: 10px;
+}
+
+.header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+	width: 90%;
+
+	&__input,
+	&__btn {
+		border-radius: 5px;
+		font-size: 16px;
+		margin: 10px;
+		padding: 10px 20px;
+	}
+
+	&__input {
+		background: none;
+		border: 1px solid rgb(209, 207, 207);
+		color: rgb(209, 207, 207);
+		min-width: 20%;
+	}
+
+	&__btn {
+		background-color: #fff;
+		cursor: pointer;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: rgb(209, 207, 207);
+		}
+	}
+}
+
+.error {
+	font-size: 28px;
+	color: red;
+	visibility: hidden;
+}
+
+.section-mid {
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+	width: 90vw;
+
+	&__icon {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 10px;
+		text-transform: uppercase;
+
+		&--picture {
+			img {
+				width: 70px;
+			}
+		}
+	}
+
+	&__temperature {
+		align-items: center;
+		display: flex;
+		font-size: 50px;
+		font-weight: bold;
+		margin: 10px;
+	}
+}
+
+.section-bot {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 300px;
+	justify-content: center;
+	margin: 10px;
+	margin-top: 80px;
+	width: 90vw;
+
+	.field {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin: 5px;
+		max-width: 400px;
+		padding: 10px;
+		width: 45%;
+
+		.description {
+			font-size: 16px;
+			padding: 5px;
+		}
+
+		.data {
+			font-size: 24px;
+			font-weight: bold;
+			padding-top: 5px;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	body {
+		background-position: -70%;
+	}
+
+	.title {
+		font-size: 30px;
+	}
+
+	.header {
+		&__input,
+		&__btn {
+			font-size: 20px;
+		}
+	}
+
+	.section-mid {
+		margin-top: 50px;
+		font-size: 25px;
+
+		&__icon {
+			&--picture {
+				img {
+					width: 140px;
+				}
+			}
+		}
+
+		&__temperature {
+			font-size: 70px;
+			margin: 20px;
+		}
+	}
+
+	.section-bot {
+		margin-top: 100px;
+
+		.field {
+			.description {
+				font-size: 20px;
+				padding: 10px;
+			}
+
+			.data {
+				font-size: 28px;
+				padding: 10px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		background-position: center;
+	}
+
+	.title {
+		font-size: 40px;
+	}
+
+	.header {
+		margin-top: 30px;
+
+		&__input,
+		&__btn {
+			font-size: 25px;
+		}
+	}
+
+	.section-mid {
+		margin-top: 70px;
+		font-size: 30px;
+
+		&__icon {
+			&--picture {
+				img {
+					width: 150px;
+				}
+			}
+		}
+
+		&__temperature {
+			font-size: 90px;
+			margin: 30px;
+		}
+	}
+
+	.section-bot {
+		.field {
+			.description {
+				font-size: 22px;
+			}
+
+			.data {
+				font-size: 30px;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.title {
+		font-size: 45px;
+	}
+
+	.header {
+		&__input,
+		&__btn {
+			font-size: 30px;
+		}
+	}
+
+	.section-mid {
+		&__icon {
+			&--picture {
+				img {
+					width: 170px;
+				}
+			}
+		}
+
+		&__temperature {
+			font-size: 100px;
+			margin: 40px;
+		}
+	}
+
+	.section-bot {
+		.field {
+			.description {
+				font-size: 26px;
+			}
+
+			.data {
+				font-size: 34px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.wrapper {
+		max-width: 1200px;
+	}
+
+	.title {
+		font-size: 55px;
+	}
+
+	.header {
+		max-width: 1200px;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section-mid {
+		max-width: 1200px;
+
+		&__temperature {
+			font-size: 120px;
+			margin: 40px;
+		}
+	}
+
+	.section-bot {
+		max-width: 1300px;
+	}
+}

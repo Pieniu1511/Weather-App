@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WheatherApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e208eaa12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1 class="title">Wheather App</h1>
+        <header class="header field">
+            <input type="text" placeholder="Enter City..." class="header__input">
+            <button class="header__btn">Send</button>
+        </header>
+        <p class="error">Musisz podać miasto!</p>
+        <main>
+            <section class="section-mid field">
+                <div class="section-mid__icon">
+                    <p class="section-mid__icon--city">----</p>
+                    <div class="section-mid__icon--picture"><img src="img/icons/unknown.png" alt="Actual wheather picture" class="wheather-picture">
+                    </div>
+                    <div class="section-mid__icon--text">----</div>
+                </div>
+                <div class="section-mid__temperature">
+                    <p class="temperature">--°C</p>
+                </div>
+            </section>
+            <section class="section-bot">
+                <div class="field">
+                    <p class="description"><i class="fa-solid fa-arrow-down"></i> Min</p>
+                    <p class="data min">--°C</p>
+                </div>
+                <div class="field">
+                    <p class="description"><i class="fa-solid fa-arrow-up"></i> Max</p>
+                    <p class="data max">--°C</p>
+                </div>
+                <div class="field">
+                    <p class="description"><i class="fa-regular fa-face-smile"></i> Feels Like</p>
+                    <p class="data feel-like">--°C</p>
+                </div>
+                <div class="field">
+                    <p class="description"><i class="fa-solid fa-arrow-down"></i> Pressure</p>
+                    <p class="data pressure">---- hPa</p>
+                </div>
+                <div class="field">
+                    <p class="description"><i class="fa-solid fa-droplet"></i> Humidity</p>
+                    <p class="data humidity">--%</p>
+                </div>
+                <div class="field">
+                    <p class="description"><i class="fa-solid fa-wind"></i> Wind Speed</p>
+                    <p class="data wind-speed">-- m/h</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
